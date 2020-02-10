@@ -74,11 +74,13 @@ const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 
-// const contactInfo = document.querySelectorAll("section.contact h4");
-// contactInfo.textContent = siteContent["contact"]["contact-h4"]
+ const contactInfo = document.querySelector("section.contact h4");
+ contactInfo.textContent = siteContent["contact"]["contact-h4"]
 
-
-
+const contactText = document.querySelectorAll("section.contact p");
+contactText[0].textContent = siteContent["contact"]["address"]
+contactText[1].textContent = siteContent["contact"]["phone"]
+contactText[2].textContent = siteContent["contact"]["email"]
 
 const footerP = document.querySelector("footer > p");
 footerP.textContent = siteContent["footer"]["copyright"]
