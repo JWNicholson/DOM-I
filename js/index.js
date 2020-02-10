@@ -62,6 +62,10 @@ navLinks[3].textContent = siteContent["nav"]["nav-item-4"]
 navLinks[4].textContent = siteContent["nav"]["nav-item-5"]
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"]
 
+navLinks.forEach(link =>  {
+  link.style.color = 'green';
+})
+
 
 //////   Top Content //////////
 const topCtnH4 = document.querySelectorAll(".top-content h4");
