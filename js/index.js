@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let snippetImg = document.getElementById("cta-img");
-snippetImg.setAttribute('src', siteContent["cta"]["img-src"])
+snippetImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 
 
@@ -50,7 +50,35 @@ let heading1 = document.querySelector('h1');
 heading1.textContent = siteContent["cta"]["h1"];
 
 let ctaBtn = document.querySelector("button");
-ctaBtn.textContent = siteContent["cta"]["button"];
+ctaBtn.textContent = siteContent["cta"]["button"]
 
-let middleImg = document.getElementById("middle-img");
+//////   Top Content //////////
+let topContentFeatures = document.querySelectorAll('.top-content h4:first-of-type');
+topContentFeatures.textContent = siteContent["main-content"]["features-h4"]
+//assign elements to array
+// const featuresH4 = topContentH4[0];
+// const aboutH4 = topContentH4[1]
+
+// const featuresText = topContentText[0]
+// const aboutText = topContentText[1]
+
+// featuresH4.textContent = siteContent["main-content"]["features-h4"]
+// aboutH4.textContent = siteContent["main-content"]["about-h4"]
+
+// featuresText.textContent = siteContent["main-content"]["features-content"]
+// aboutText.textContent = siteContent["main-content"]["about-content"]
+
+
+///////// middle content ///////////
+const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+// const contactInfo = document.querySelectorAll("section.contact h4");
+// contactInfo.textContent = siteContent["contact"]["contact-h4"]
+
+
+
+
+const footerP = document.querySelector("footer > p");
+footerP.textContent = siteContent["footer"]["copyright"]
