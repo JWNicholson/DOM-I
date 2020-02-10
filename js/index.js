@@ -52,21 +52,25 @@ heading1.textContent = siteContent["cta"]["h1"];
 let ctaBtn = document.querySelector("button");
 ctaBtn.textContent = siteContent["cta"]["button"]
 
+
+//////////// nav /////////////////
+const navLinks = document.querySelectorAll("nav a");
+navLinks[0].textContent = siteContent["nav"]["nav-item-1"]
+navLinks[1].textContent = siteContent["nav"]["nav-item-2"]
+navLinks[2].textContent = siteContent["nav"]["nav-item-3"]
+navLinks[3].textContent = siteContent["nav"]["nav-item-4"]
+navLinks[4].textContent = siteContent["nav"]["nav-item-5"]
+navLinks[5].textContent = siteContent["nav"]["nav-item-6"]
+
+
 //////   Top Content //////////
-let topContentFeatures = document.querySelectorAll('.top-content h4:first-of-type');
-topContentFeatures.textContent = siteContent["main-content"]["features-h4"]
-//assign elements to array
-// const featuresH4 = topContentH4[0];
-// const aboutH4 = topContentH4[1]
+const topCtnH4 = document.querySelectorAll(".top-content h4");
+topCtnH4[0].textContent = siteContent["main-content"]["features-h4"]
+topCtnH4[1].textContent = siteContent["main-content"]["about-h4"]
 
-// const featuresText = topContentText[0]
-// const aboutText = topContentText[1]
-
-// featuresH4.textContent = siteContent["main-content"]["features-h4"]
-// aboutH4.textContent = siteContent["main-content"]["about-h4"]
-
-// featuresText.textContent = siteContent["main-content"]["features-content"]
-// aboutText.textContent = siteContent["main-content"]["about-content"]
+const topCtnH4Text = document.querySelectorAll(".top-content p");
+topCtnH4Text[0].textContent = siteContent["main-content"]["features-content"]
+topCtnH4Text[1].textContent = siteContent["main-content"]["about-content"]
 
 
 ///////// middle content ///////////
