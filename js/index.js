@@ -73,10 +73,22 @@ topContentFeatures.textContent = siteContent["main-content"]["features-h4"]
 const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
+/////////Bottom Content //////////////
+const bottomCtnH4 = document.querySelectorAll(".bottom-content h4");
+bottomCtnH4[0].textContent = siteContent["main-content"]["services-h4"]
+bottomCtnH4[1].textContent = siteContent["main-content"]["product-h4"]
+bottomCtnH4[2].textContent = siteContent["main-content"]["vision-h4"]
 
- const contactInfo = document.querySelector("section.contact h4");
- contactInfo.textContent = siteContent["contact"]["contact-h4"]
+const bottomCtnH4Text = document.querySelectorAll(".bottom-content p");
+bottomCtnH4Text[0].textContent = siteContent["main-content"]["services-content"]
+bottomCtnH4Text[1].textContent = siteContent["main-content"]["product-content"]
+bottomCtnH4Text[2].textContent = siteContent["main-content"]["vision-content"]
 
+
+
+//////////Contact section //////////////
+const contactInfo = document.querySelector("section.contact h4");
+contactInfo.textContent = siteContent["contact"]["contact-h4"]
 const contactText = document.querySelectorAll("section.contact p");
 contactText[0].textContent = siteContent["contact"]["address"]
 contactText[1].textContent = siteContent["contact"]["phone"]
