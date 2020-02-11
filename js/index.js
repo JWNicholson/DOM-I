@@ -76,21 +76,6 @@ let newLink2 = document.createElement('a');
 newLink2.textContent = "Prepend";
 parentElement.prepend(newLink2);
 
-
-// parentElement.innerText('<a href="#">Append</a>');
-//  let aP = document.createElement('a');
-//  let link = document.createTextNode("Appended");
-// aP.appendChild(link);
-// aP.href = "#";
-// aP.title="Appended";
-// document.nav.appendChild(aP);
-
-
-
-
-
-
-
 //////   Top Content //////////
 const topCtnH4 = document.querySelectorAll(".top-content h4");
 topCtnH4[0].textContent = siteContent["main-content"]["features-h4"]
