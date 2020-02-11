@@ -66,6 +66,26 @@ navLinks.forEach(link =>  {
   link.style.color = 'green';
 })
 
+ const parentElement = document.querySelector("nav");
+ let newLink = document.createElement('a');
+ //newLink.setAttribute('href');
+ newLink.textContent = "Append";
+parentElement.appendChild(newLink);
+
+
+// parentElement.innerText('<a href="#">Append</a>');
+//  let aP = document.createElement('a');
+//  let link = document.createTextNode("Appended");
+// aP.appendChild(link);
+// aP.href = "#";
+// aP.title="Appended";
+// document.nav.appendChild(aP);
+
+
+
+
+
+
 
 //////   Top Content //////////
 const topCtnH4 = document.querySelectorAll(".top-content h4");
