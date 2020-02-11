@@ -72,6 +72,10 @@ navLinks.forEach(link =>  {
  newLink.textContent = "Append";
 parentElement.appendChild(newLink);
 
+let newLink2 = document.createElement('a');
+newLink2.textContent = "Prepend";
+parentElement.prepend(newLink2);
+
 
 // parentElement.innerText('<a href="#">Append</a>');
 //  let aP = document.createElement('a');
